@@ -1,17 +1,20 @@
-//
-//  FeedPlannerApp.swift
-//  FeedPlanner
-//
-//  Created by Anton Danilov on 11/12/25.
-//
-
 import SwiftUI
+import Firebase
+import FirebaseAuth
 
 @main
 struct FeedPlannerApp: App {
+    
+    @UIApplicationDelegateAdaptor(LifecycleMediator.self) var lifecycleMediator
+    
+    @StateObject var appState = AppState()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PlannerApplicationView()
+                .environmentObject(appState)
         }
     }
+    
 }
+

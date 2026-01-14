@@ -6,14 +6,89 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8F996E7F2F1806BE00B0946E /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 8F996E7E2F1806BE00B0946E /* AppsFlyerLib */; };
+		8F996E822F18076B00B0946E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8F996E812F18076B00B0946E /* FirebaseAnalytics */; };
+		8F996E842F18076B00B0946E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8F996E832F18076B00B0946E /* FirebaseAuth */; };
+		8F996E862F18076B00B0946E /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 8F996E852F18076B00B0946E /* FirebaseDatabase */; };
+		8F996E882F18076B00B0946E /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 8F996E872F18076B00B0946E /* FirebaseMessaging */; };
+		8F996EBD2F180EB000B0946E /* AppNotifServiceExt.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8F996EB62F180EB000B0946E /* AppNotifServiceExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8F996EC52F180EBD00B0946E /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 8F996EC42F180EBD00B0946E /* FirebaseMessaging */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8F996EBB2F180EB000B0946E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F5573DF2EEB105000F806C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F996EB52F180EB000B0946E;
+			remoteInfo = AppNotifServiceExt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8F996EC22F180EB000B0946E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8F996EBD2F180EB000B0946E /* AppNotifServiceExt.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		8F5573E72EEB105000F806C9 /* FeedPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F996EB62F180EB000B0946E /* AppNotifServiceExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AppNotifServiceExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8F996E8A2F18077D00B0946E /* Exceptions for "FeedPlanner" folder in "FeedPlanner" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Data/StateManagement.swift,
+				Info.plist,
+			);
+			target = 8F5573E62EEB105000F806C9 /* FeedPlanner */;
+		};
+		8F996EC12F180EB000B0946E /* Exceptions for "AppNotifServiceExt" folder in "AppNotifServiceExt" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8F996EB52F180EB000B0946E /* AppNotifServiceExt */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		8F996EC82F18149900B0946E /* Exceptions for "FeedPlanner" folder in "Copy Bundle Resources" phase from "FeedPlanner" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 8F5573E52EEB105000F806C9 /* Resources */;
+			membershipExceptions = (
+				Data/StateManagement.swift,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		8F5573E92EEB105000F806C9 /* FeedPlanner */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8F996E8A2F18077D00B0946E /* Exceptions for "FeedPlanner" folder in "FeedPlanner" target */,
+				8F996EC82F18149900B0946E /* Exceptions for "FeedPlanner" folder in "Copy Bundle Resources" phase from "FeedPlanner" target */,
+			);
 			path = FeedPlanner;
+			sourceTree = "<group>";
+		};
+		8F996EB72F180EB000B0946E /* AppNotifServiceExt */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8F996EC12F180EB000B0946E /* Exceptions for "AppNotifServiceExt" folder in "AppNotifServiceExt" target */,
+			);
+			path = AppNotifServiceExt;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +98,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F996E822F18076B00B0946E /* FirebaseAnalytics in Frameworks */,
+				8F996E842F18076B00B0946E /* FirebaseAuth in Frameworks */,
+				8F996E882F18076B00B0946E /* FirebaseMessaging in Frameworks */,
+				8F996E862F18076B00B0946E /* FirebaseDatabase in Frameworks */,
+				8F996E7F2F1806BE00B0946E /* AppsFlyerLib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F996EB32F180EB000B0946E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F996EC52F180EBD00B0946E /* FirebaseMessaging in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				8F5573E92EEB105000F806C9 /* FeedPlanner */,
+				8F996EB72F180EB000B0946E /* AppNotifServiceExt */,
+				8F996EC32F180EBD00B0946E /* Frameworks */,
 				8F5573E82EEB105000F806C9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +131,16 @@
 			isa = PBXGroup;
 			children = (
 				8F5573E72EEB105000F806C9 /* FeedPlanner.app */,
+				8F996EB62F180EB000B0946E /* AppNotifServiceExt.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8F996EC32F180EBD00B0946E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,20 +153,50 @@
 				8F5573E32EEB105000F806C9 /* Sources */,
 				8F5573E42EEB105000F806C9 /* Frameworks */,
 				8F5573E52EEB105000F806C9 /* Resources */,
+				8F996EC22F180EB000B0946E /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8F996EBC2F180EB000B0946E /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				8F5573E92EEB105000F806C9 /* FeedPlanner */,
 			);
 			name = FeedPlanner;
 			packageProductDependencies = (
+				8F996E7E2F1806BE00B0946E /* AppsFlyerLib */,
+				8F996E812F18076B00B0946E /* FirebaseAnalytics */,
+				8F996E832F18076B00B0946E /* FirebaseAuth */,
+				8F996E852F18076B00B0946E /* FirebaseDatabase */,
+				8F996E872F18076B00B0946E /* FirebaseMessaging */,
 			);
 			productName = FeedPlanner;
 			productReference = 8F5573E72EEB105000F806C9 /* FeedPlanner.app */;
 			productType = "com.apple.product-type.application";
+		};
+		8F996EB52F180EB000B0946E /* AppNotifServiceExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F996EBE2F180EB000B0946E /* Build configuration list for PBXNativeTarget "AppNotifServiceExt" */;
+			buildPhases = (
+				8F996EB22F180EB000B0946E /* Sources */,
+				8F996EB32F180EB000B0946E /* Frameworks */,
+				8F996EB42F180EB000B0946E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8F996EB72F180EB000B0946E /* AppNotifServiceExt */,
+			);
+			name = AppNotifServiceExt;
+			packageProductDependencies = (
+				8F996EC42F180EBD00B0946E /* FirebaseMessaging */,
+			);
+			productName = AppNotifServiceExt;
+			productReference = 8F996EB62F180EB000B0946E /* AppNotifServiceExt.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -83,6 +211,9 @@
 					8F5573E62EEB105000F806C9 = {
 						CreatedOnToolsVersion = 16.4;
 					};
+					8F996EB52F180EB000B0946E = {
+						CreatedOnToolsVersion = 16.4;
+					};
 				};
 			};
 			buildConfigurationList = 8F5573E22EEB105000F806C9 /* Build configuration list for PBXProject "FeedPlanner" */;
@@ -94,18 +225,30 @@
 			);
 			mainGroup = 8F5573DE2EEB105000F806C9;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8F996E7D2F1806BE00B0946E /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
+				8F996E802F18076B00B0946E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8F5573E82EEB105000F806C9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				8F5573E62EEB105000F806C9 /* FeedPlanner */,
+				8F996EB52F180EB000B0946E /* AppNotifServiceExt */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8F5573E52EEB105000F806C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F996EB42F180EB000B0946E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +265,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8F996EB22F180EB000B0946E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F996EBC2F180EB000B0946E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F996EB52F180EB000B0946E /* AppNotifServiceExt */;
+			targetProxy = 8F996EBB2F180EB000B0946E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		8F5573F12EEB105200F806C9 /* Debug */ = {
@@ -249,8 +407,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FeedPlanner/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Feed Planner Plus";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need your permission to use it in application.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Feed Planner Plus may use limited technical data from your device to support app functionality, assess performance, and improve planning features. This information is used solely for internal analysis and enhancement. We do not use this data for cross-app tracking, personal profiling, or third-party advertising.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -265,7 +426,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.3;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.plannerforfeed.FeedPlanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -289,8 +450,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FeedPlanner/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Feed Planner Plus";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need your permission to use it in application.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Feed Planner Plus may use limited technical data from your device to support app functionality, assess performance, and improve planning features. This information is used solely for internal analysis and enhancement. We do not use this data for cross-app tracking, personal profiling, or third-party advertising.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -305,7 +469,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.3;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.plannerforfeed.FeedPlanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -316,6 +480,67 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 2.5;
+			};
+			name = Release;
+		};
+		8F996EBF2F180EB000B0946E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppNotifServiceExt/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AppNotifServiceExt;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plannerforfeed.FeedPlanner.AppNotifServiceExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8F996EC02F180EB000B0946E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppNotifServiceExt/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AppNotifServiceExt;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.plannerforfeed.FeedPlanner.AppNotifServiceExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -340,7 +565,68 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		8F996EBE2F180EB000B0946E /* Build configuration list for PBXNativeTarget "AppNotifServiceExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F996EBF2F180EB000B0946E /* Debug */,
+				8F996EC02F180EB000B0946E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8F996E7D2F1806BE00B0946E /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.17.8;
+			};
+		};
+		8F996E802F18076B00B0946E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8F996E7E2F1806BE00B0946E /* AppsFlyerLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F996E7D2F1806BE00B0946E /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
+			productName = AppsFlyerLib;
+		};
+		8F996E812F18076B00B0946E /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F996E802F18076B00B0946E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		8F996E832F18076B00B0946E /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F996E802F18076B00B0946E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		8F996E852F18076B00B0946E /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F996E802F18076B00B0946E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		8F996E872F18076B00B0946E /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F996E802F18076B00B0946E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		8F996EC42F180EBD00B0946E /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F996E802F18076B00B0946E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8F5573DF2EEB105000F806C9 /* Project object */;
 }
